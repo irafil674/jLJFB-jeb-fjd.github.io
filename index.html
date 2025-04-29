@@ -1,52 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title>dino</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <form>
-        <fieldset>
-            <legend>Общая информация</legend>
-            <div>
-                <p>Фамилия <input type="text" placeholder="Иванов"></p>
-                <p>Имя <input type="text" placeholder="Иван"></p>
-                <p>Отчество <input type="text" placeholder="Иванович"></p>
-                <p>email <input type="text" placeholder="mail@mail.ru"></p>
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Пол</legend>
-            <div>
-            <input type="radio" name="sex" id="sex1" value="male">
-            <label for="sex1">М</label>
-            
-            <input type="radio" name="sex" id="sex2" value="female">
-            <label for="sex2">Ж</label>
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Хобби</legend>
-            <div>
-            <input type="checkbox" name="hobby" id = "hobby1" value="drawing"> 
-            <label for="hobby1">Рисование</label>
-
-            <input type="checkbox" name="hobby" id = "hobby2" value="reding"> 
-            <label for="hobby2">Чтение</label>
-
-            <input type="checkbox" name="hobby" id = "hobby3" value="knitting">
-            <label for="hobby3">Вязание</label>
-
-            <input type="checkbox" name="hobby" id = "hobby4" value="cooking">
-            <label for="hobby4">Кулинария</label>
-            </div>
-        </fieldset>
     <div>
-        <button type="submit">Отправить</button>
-        <button type="reset">Очистить</button>
+        Score: 
+        <output id="score">0</output> 
+        Best:
+        <output id="best_score">0</output> 
     </div>
-    </form>
+    <canvas id="canvas" width="1000" height="200">
+    <script src="js/main.js"></script>
 </body>
 </html>
