@@ -2,11 +2,15 @@
 
 // window.onkeydown = jump_event;
 
+
 for (var i = 1; i < 11; i++) {
     document.getElementById("button" + i).onclick = MyFunc("button" + i);
     };
 
 // button1.onclick = MyFunc("button1"); 
+
+let tg = window.Telegram.WebApp;
+
 function MyFunc(name){
     function myFunction(){
         if(document.getElementById(name).style.backgroundColor !='white'){
@@ -14,12 +18,7 @@ function MyFunc(name){
         else{
             document.getElementById(name).style.backgroundColor='#bde0ff';
         }
+        tg.sendData("some string that we need to send"); 
     }
     return myFunction;
 }
-let tg = window.Telegram.WebApp;
-tg.expand();
-Telegram.WebApp.onEvent('mainButtonClicked', function(){
-	tg.sendData("some string that we need to send"); 
-	//при клике на основную кнопку отправляем данные в строковом виде
-});
