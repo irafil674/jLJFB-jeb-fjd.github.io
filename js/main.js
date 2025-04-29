@@ -1,9 +1,9 @@
 'use strict'
 
-let field = Array(10)
+let field = Array(10);
 
 for (var i = 0; i < 10; i ++) {
-    field[i] = Array(10)
+    field[i] = Array(10);
 }
 
 for (var i = 0; i < 100; i++) {
@@ -11,21 +11,21 @@ for (var i = 0; i < 100; i++) {
     };
 
 
-let sb_bt = document.getElementById("sb_bt")
-sb_bt.onclick = submission_button
+let sb_bt = document.getElementById("sb_bt");
+sb_bt.onclick = submission_button;
 
 function submission_button(){
-    var data = ""
+    var data = "";
     for (var i  = 0; i < 10; i ++){
         for (var j = 0; j < 10; j ++){
             if(field[i][j]){
-                data += "1 "
+                data += "1 ";
             }
             else{
-                data += "0 "
+                data += "0 ";
             }
         }
-        data += "\n"
+        data += "\n";
     }
     tg.sendData(data); 
 }
