@@ -1,7 +1,5 @@
-canvas{
-    background: #bde0ff;
-}
-
-div{
-    font-family: cursive;
+button.field_btn{
+    background: white;
+    width: 24px;
+    height: 24px;
 }
