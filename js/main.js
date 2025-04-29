@@ -8,9 +8,9 @@ for (var i = 1; i < 11; i++) {
 
 
 let sb_bt = document.getElementById("sb_bt")
-sb_bt.onclick = myFunction
+sb_bt.onclick = myfunction
 
-function myFunction(){
+function myfunction(){
     tg.sendData("some string that we need to send хы-хы, ха-ха"); 
 }
 
@@ -26,3 +26,4 @@ function MyFunc(name){
     }
     return myFunction;
 }
+
